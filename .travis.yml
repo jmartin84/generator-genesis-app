@@ -1,10 +1,7 @@
-language: node_js
-
-node_js:
-  - "4.2.1"
 services:
     - docker
 before_install:
+    - ./dev/build.sh
 script:
   - ./dev/test.sh
 sudo: false
