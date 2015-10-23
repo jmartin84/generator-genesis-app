@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "babel": "^5.8.23",
+    "babel": "^5.8.23"
   }
 }
