@@ -7,5 +7,7 @@ CONTAINER=$(docker run \
                 jmartin84/generator-genesis-app)
 
 docker exec -ti $CONTAINER npm test
-
+TESTRESULT=$?
 docker rm -v -f $CONTAINER > /dev/null
+echo 'container removed'
+exit $TESTRESULT
