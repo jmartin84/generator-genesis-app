@@ -8,6 +8,7 @@ var os = require('os');
 describe('genesis-app:app', function () {
     before(function (done) {
         helpers.run(path.join(__dirname, '../generators/app'))
+            .inDir('/.tmp')
             .withOptions({ skipInstall: true })
             .withPrompts({ someOption: true })
             .on('end', done);
@@ -16,7 +17,6 @@ describe('genesis-app:app', function () {
     it('creates files', function () {
         assert.file([
             '.eslintrc',
-            '.flowconfig',
             '.editorconfig',
             'gulpfile.js',
             'Dockerfile',
