@@ -6,6 +6,6 @@ CONTAINER=$(docker run \
                 -d                     \
                 jmartin84/generator-genesis-app)
 
-docker exec $CONTAINER npm test
+docker exec -ti $CONTAINER npm test
 
 docker rm -v -f $CONTAINER > /dev/null
