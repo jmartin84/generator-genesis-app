@@ -1,9 +1,11 @@
 language: node_js
-
-services:
-    - docker
-before_install:
-    - docker build -t generator-test .
 script:
-  - docker run generator-test npm test
-sudo: required
+- npm test
+deploy:
+  provider: npm
+  email: jmart@the-coder.com
+  api_key:
+    secure: EFwm64MdNQS/bxNQzErfHU/GBVYw2nLhxsKTent5VKdCnrUANAjCC+ENpBx7ggQcBYFwsdWqV2i3j5M1IgJSVb9BDRdv835eiuG2+6/0npP/14PrmVrA3cJPPCMHgTONVpnbh32k4k0yb8vbofJ8qmwDtnX1HwG0C37No4z0X0phJAE6zyBCoI4aLHWSBJIR3nS3M2ydXFzWGY7xLQ+F37YvdgzS9xrWFnKpiDglMJwUjL9KceEnu9sHyASadlbcKqz/je0cY65RgeeJyKm2Mw++2jtqQgdjSIvFvoRK4Mk31Gq2dMF0z3aF/9VmBz94DZmUcD1Vh10iVNI0CIFP1gShPpWu8ScwvJcm/xMhpowBmvOsocjTIOj+eNoj2YhYwwDlmpDawZkzdYpuc0TsX5CA6u80Dpxw4H7dx7sZqulTwDJXkVKeLXhkIU3H32xSPSbVXcOHJb97yomSvvB3+/gCA2PFsUDh3hFno0lcrbpGJyX8k0/AAPUqJgJm7OJU1MenGcTW8Ki8bp5B6Rje20MYwTCesZXTD/M66+uzzWxF/BhuHvQB5M+04RbkesEdH1hdXNLVfBdwBrGG7qoA7aBb8eBWtRBWBzS2X7bIc+kLVcmsoAs7pU8yOrZKbcolNg70N9OxiP3xY2YgmnP3aHvhju0W2w6xefMlb8GMOVQ=
+  on:
+    tags: true
+    repo: jmartin84/generator-genesis-app
