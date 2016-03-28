@@ -1,4 +1,4 @@
-FROM node:latest
+FROM <%= image %>:<%= tag %>
 
 COPY . /src
 

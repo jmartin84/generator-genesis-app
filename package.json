@@ -1,6 +1,6 @@
 {
   "name": "generator-genesis-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generator for bare bones node app with docker support",
   "license": "MIT",
   "main": "app/index.js",
@@ -13,7 +13,7 @@
     "test": "mocha --compilers js:babel/register test/**/*.test.js"
   },
   "files": [
-    "generators"
+    "generators/app"
   ],
   "keywords": [
     "yeoman-generator",
@@ -27,7 +27,8 @@
     "yosay": "^1.0.2"
   },
   "devDependencies": {
+    "babel": "^5.8.23",
     "mocha": "*",
-    "babel": "^5.8.23"
+    "rimraf": "^2.5.2"
   }
 }
