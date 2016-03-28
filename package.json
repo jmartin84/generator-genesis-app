@@ -1,6 +1,6 @@
 {
   "name": "generator-genesis-app",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Generator for bare bones node app with docker support",
   "license": "MIT",
   "main": "app/index.js",

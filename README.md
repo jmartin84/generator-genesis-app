@@ -1,4 +1,4 @@
-# generator-genesis-app [![Build Status](https://secure.travis-ci.org/jzmartin84/generator-genesis-app.png?branch=master)](https://travis-ci.org/jzmartin84/generator-genesis-app)
+# generator-genesis-app [![Build Status](https://travis-ci.org/jmartin84/generator-genesis-app.svg?branch=master)](https://travis-ci.org/jzmartin84/generator-genesis-app)
 
 > [Yeoman](http://yeoman.io) generator
 
